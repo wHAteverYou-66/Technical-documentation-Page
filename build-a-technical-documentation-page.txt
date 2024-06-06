@@ -1,0 +1,439 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>C# Documentation</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li>
+          <a class="nav-link" href="#What_you_should_already_know"
+            >What you should already know</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#C#_and_C"
+            >C# and C</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+        <li><a class="nav-link" href="#Variables">Variables</a></li>
+        <li>
+          <a class="nav-link" href="#Declaring_variables"
+            >Declaring variables</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Variable_scope">Variable scope</a></li>
+        <li>
+          <a class="nav-link" href="#Global_variables">Global variables</a>
+        </li>
+        <li><a class="nav-link" href="#Constants">Constants</a></li>
+        <li><a class="nav-link" href="#Data_types">Data types</a></li>
+        <li>
+          <a class="nav-link" href="#Loop_statements"
+            >Loop statements</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#Function_declarations"
+            >Function declarations</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Reference">Reference</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+          <p>
+            C# (pronounced “See Sharp”) is a modern, object-oriented, and type-safe programming language. Developed by Microsoft, C# empowers developers to build secure and robust applications that run within the .NET framework. If you’re familiar with languages like C, C++, Java, or JavaScript, C# will feel like a friendly neighbor.
+          </p>
+          <p>
+            JavaScript contains a standard library of objects, such as Array,
+            Date, and Math, and a core set of language elements such as
+            operators, control structures, and statements. Core JavaScript can
+            be extended for a variety of purposes by supplementing it with
+            additional objects; for example:
+          </p>
+          <ul>
+            <li>
+              Desktop Applications: C# is commonly used for building Windows desktop applications.
+            </li>
+            <li>
+              Web Applications: ASP.NET allows developers to create robust web applications using C#.
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="What_you_should_already_know">
+        <header>What you should already know</header>
+        <article>
+          <p>
+            Before embarking on your C# journey, it’s helpful to have a basic understanding of programming concepts. Familiarity with other languages will accelerate your learning process.
+</p>
+          <ul>
+            <li>
+              Object-Oriented Language: C# is a modern, object-oriented, and type-safe programming language developed by Microsoft. It combines the robustness of C++ with the simplicity of Visual Basic. As an object-oriented language, it allows you to model real-world entities as objects, promoting code organization and reusability.
+            </li>
+            <li>Versatility and Ease of Learning: C# is versatile and fairly easy to learn. Whether you’re a beginner or have experience with other programming languages, C# provides a powerful yet straightforward environment for development.
+</li>
+            <li>
+              .NET Framework: C# primarily operates within the Windows .NET framework. However, it can also be applied to open-source platforms. The .NET framework provides essential libraries and tools for C# development.
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="C#_and_C">
+        <header>C# and C</header>
+        <article>
+          <p>
+            C# has its roots in the C family of languages. While it shares some syntax similarities with C, it also introduces modern features and safety mechanisms. Think of C# as a refined and evolved sibling of C.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Hello_world">
+        <header>Hello world</header>
+        <article>
+          Let’s kick things off with the classic “Hello, World!” program. Here’s how it looks in C#:
+          <code>
+            using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Hello, World!");
+    }
+}
+          </code>
+
+          Compile and run this snippet, and witness the magic of your inaugural C# output.
+        </article>
+      </section>
+      <section class="main-section" id="Variables">
+        <header>Variables</header>
+        <p>
+          int: Stores integers (whole numbers) without decimals, such as 123 or -123.
+        </p>
+        <p>
+         double: Holds floating-point numbers with decimals, like 19.99 or -19.99.
+        </p>
+        <p>
+         char: Represents single characters, such as ‘a’ or ‘B’. Char values are enclosed in single quotes.
+string: Stores text, such as “Hello World”. String values are enclosed in double quotes.
+bool: Manages values with two states: true or false.
+        </p>
+      </section>
+      <section class="main-section" id="Declaring_variables">
+        <header>Declaring variables</header>
+        <article>
+          <p>
+            In C#, variables are essential building blocks. Declare them using the var keyword or specify their data type explicitly. For example:
+          </p>
+          <code>
+int age = 30;
+string name = "Alice";
+double salary = 50000.75;
+            </code>
+        </article>
+      </section>
+      <section class="main-section" id="Variable_scope">
+        <header>Variable scope</header>
+        <article>
+          <p>
+           C# enforces strict variable scoping rules. Variables can be local (within a method), instance-level (associated with an object), or static (shared across all instances of a class).
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Global_variables">
+        <header>Global variables</header>
+        <article>
+          <p>
+            Global variables, also known as constants, remain constant throughout the program’s execution. Declare them using the const keyword:
+          </p>
+          <code>
+            const double Pi = 3.14159;
+          </code>
+        </article>
+      </section>
+      <section class="main-section" id="Constants">
+        <header>Constants</header>
+        <article>
+          <p>
+            To create a variable, specify its type and assign it a value:
+          </p>
+          <code>
+string name = "John";
+int myNum = 15;
+          </code>
+          <p>
+            You can also declare a variable without assigning a value initially and set it later:
+            </p>
+<code>
+int myNum;
+myNum = 15;
+  </code>
+          <p>
+            If you assign a new value to an existing variable, it will overwrite the previous value:
+          </p>
+<code>
+  int myNum = 15;
+myNum = 20; // Now myNum is 20
+</code>
+          <p>
+            Apart from the basic types, you’ll encounter more data types as you explore C#:
+          </p>
+
+          <code>
+            int myNum = 5;
+double myDoubleNum = 5.99D;
+char myLetter = 'D';
+bool myBool = true;
+string myText = "Hello";
+          </code>
+        </article>
+      </section>
+      <section class="main-section" id="Data_types">
+        <header>Data types</header>
+        <article>
+          <p>
+            C# supports various data types, including integers (int, long), floating-point numbers (float, double), characters (char), and more. Choose the appropriate type based on your needs.
+</p>
+          <ul>
+            <li>
+              <p>Six data types that are primitives:</p>
+              <ul>
+                <li>Boolean. true and false.</li>
+                <li>
+                  bool: Represents true or false values.
+                </li>
+                <li>
+                  char: Stores a single character (e.g., ‘A’, ‘$’, or ‘5’).
+                </li>
+                <li>string: Holds a sequence of characters (text) enclosed in double quotes (e.g., “Hello, World!”).
+</li>
+                <li>float: Stores fractional numbers with about 6 to 7 decimal digits.
+</li>
+                <li>
+                  double: Provides higher precision, storing about 15 decimal digits.
+                </li>
+              </ul>
+            </li>
+          </ul>
+          Although these data types are a relatively small amount, they enable
+          you to perform useful functions with your applications. Objects and
+          functions are the other fundamental elements in the language. You can
+          think of objects as named containers for values, and functions as
+          procedures that your application can perform.
+        </article>
+      </section>
+      <section class="main-section" id="Loop_statements">
+        <header>Loop statements</header>
+        <article>
+          Loops are fundamental for repetition. C# offers for, while, and do-while loops. Here’s a simple for loop:
+          <code>
+            for (int i = 0; i < 10; i++)
+{
+    Console.WriteLine($"Iteration {i}");
+}
+
+          </code>
+        </article>
+      </section>
+      <section class="main-section" id="Function_declarations">
+        <header>Function declarations</header>
+        <article>
+          Functions (methods) allow you to encapsulate logic. Declare them within classes. For instance:
+          <ul>
+            <li> visibility: Optional. Specifies the access level (e.g., public, private, internal).
+</li>
+            <li>
+              return type: Mandatory. Indicates the type of value the function returns (e.g., int, string, void).
+            </li>
+            <li>
+              name: Mandatory. The name of the function.
+            </li>
+          </ul>
+          <p>
+            Here’s a simple function that adds two integers and returns the result:
+          </p>
+
+          <code>
+            public int Add(int a, int b)
+{
+    return a + b;
+}
+          </code>
+          <p>
+            To use the function, call it from another part of your code:
+          </p>
+          <code>
+            int result = Add(5, 3); // result will be 8
+          </code>
+          <p>
+            Remember, functions allow you to organize your code, improve readability, and promote reusability.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+          <ul>
+            <li>
+C# embraces reference types, allowing you to create objects dynamically. Classes, interfaces, and delegates fall into this category.
+            </li>
+            <p> 
+              Remember, this is just a glimpse into the vast C# universe. Explore further, experiment, and let your code flourish!
+            </p>
+            <p>
+              For interactive examples and deeper insights, check out the official C# tutorials.
+            </p>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+html,
+body {
+  min-width: 290px;
+  color: #4d4e53;
+  background-color: #ffffff;
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+}
+
+header {
+  color: black;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: thin;
+}
+
+#main-doc header {
+  text-align: left;
+  margin: 0px;
+}
+
+#navbar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li {
+  color: #4d4e53;
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: #4d4e53;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+
+section article {
+  color: #4d4e53;
+  margin: 15px;
+  font-size: 0.96em;
+}
+
+section li {
+  margin: 15px 0px 0px 20px;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+  #navbar ul {
+    border: 1px solid;
+    height: 207px;
+  }
+
+  #navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+
+  code {
+    margin-left: -20px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+  }
+}
+
+
+** end of undefined **
+
